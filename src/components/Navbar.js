@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 // import files
-// import logo from '../../src/images/logo.png'
+import logo from '../../src/images/bg.png'
 
 // import pre loaded navbar class from bootstrap
 function Navbar() {
@@ -14,12 +14,12 @@ function Navbar() {
                     <NavLink activeClassName="menu_active" exact className="logo-image" to="/home">
                         {/* div to hold the logo image */}
                         <div className="logo-image">
-                            {/* <img src={logo} alt="" width="30" height="24" /> */}
+                            <img src={logo} alt="" width="30" height="24" />
                         </div>
                     </NavLink>
-                    <button className="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                    {/* <button className="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> */}
+                        {/* <span className="navbar-toggler-icon"></span>
+                    </button> */}
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                             {/* li that redirects the user to each separate component */}
